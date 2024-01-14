@@ -4,6 +4,7 @@
     display: flex; 
     color: azure;
     list-style: none;
+    position:fixed,absolute;
   }
   
   .header img:first-child {
