@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Import the shopping cart icon
 import './nav.css';
 
+import Menu from './Menu.jsx';
+
+
+
 export default function Navbar() {
   return (
     <div className='header'>
@@ -22,7 +26,7 @@ export default function Navbar() {
         <li>
           <button className='b2'>
             <i className="fas fa-shopping-cart"></i>
-            <FontAwesomeIcon icon={faShoppingCart} /> Cart (0)
+            <FontAwesomeIcon icon={faShoppingCart} /> {Menu.text}
           </button>
         </li>
       </div>

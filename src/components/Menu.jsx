@@ -1,9 +1,14 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import './menu.css';
 
 
 
 export default function Menu() {
+  const[text , setText] = useState(0);
+  const addOne = () => {
+    let newtext = text + 1;
+    setText(newtext);
+  }
  
   
   return (
@@ -38,7 +43,7 @@ export default function Menu() {
           </h1>
           <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
           <p className='price'>$9.00</p>
-          <button className='b7'>Add to Cart</button>
+          <button className='b7' onClick={addOne}>Add to Cart</button>
         </div>
         <div className='container1'>
           <img className="pizza1" src='.\Get the We Heart It app!.jpg' alt="Pizza Image 3" />
@@ -47,7 +52,7 @@ export default function Menu() {
           </h1>
           <p>Pizza dough, pizza sauce, provolone cheese, mozzarella.</p>
           <p className='price'>$10.00</p>
-          <button className='b7'>Add to Cart</button>
+          <button className='b7' >Add to Cart</button>
         </div>
         <div className='container1'>
           <img className="pizza1" src='.\download (2).jpg' alt="Pizza Image 3" />
