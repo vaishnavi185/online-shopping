@@ -16,7 +16,7 @@ function App() {
    <body >
    <Navbar/>
    <Home></Home>
-   <Menu></Menu>
+   <Menu ></Menu>
    </body>
   
   

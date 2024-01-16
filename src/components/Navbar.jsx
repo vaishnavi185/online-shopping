@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Import the shopping cart icon
 import './nav.css';
@@ -8,7 +8,17 @@ import Menu from './Menu.jsx';
 
 
 export default function Navbar() {
+  const [cartCount, setCartCount] = useState(0);
+
+  // Function to handle cart update
+  const handleAddToCart = () => {
+    setCartCount(cartCount + 1);
+  };
+
+ 
   return (
+    
+    <>
     <div className='header'>
       <li>
         <img src="/nav.png" alt="image" />
@@ -24,12 +34,15 @@ export default function Navbar() {
         <li><a href='#html'>Contact</a></li>
         <li><button className='b1'>Log in</button></li>
         <li>
-          <button className='b2'>
+          <button className='b2' >
             <i className="fas fa-shopping-cart"></i>
-            <FontAwesomeIcon icon={faShoppingCart} /> {Menu.text}
+            <FontAwesomeIcon icon={faShoppingCart} />  {cartCount}
           </button>
         </li>
       </div>
     </div>
+    <Menu onAddToCart={handleAddToCart} />
+   
+    </>
   );
 }
