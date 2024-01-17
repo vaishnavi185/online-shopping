@@ -4,6 +4,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Import th
 import './nav.css';
 
 import Menu from './Menu.jsx';
+import Home from './Home.jsx';
 
 
 
@@ -41,6 +42,7 @@ export default function Navbar() {
         </li>
       </div>
     </div>
+    <Home></Home>
     <Menu onAddToCart={handleAddToCart} />
    
     </>
