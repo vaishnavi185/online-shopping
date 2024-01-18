@@ -13,6 +13,7 @@ export default function Menu({ onAddToCart }) {
   return (
    
     <>
+    <section id='menu'>
       <div className='container'>
         <h2 className='bold'>Welcome to <i className='it'>Pizza Time</i> restaurant </h2>
         <div className='con'>
@@ -104,6 +105,8 @@ export default function Menu({ onAddToCart }) {
         </div>
       </div>
       </div>
+      </section>
+      <section id='blog'>
       <div className='container3'>
           <h1 className='h10'>Recent Blog</h1>
           <div className='grip'>
@@ -137,6 +140,9 @@ export default function Menu({ onAddToCart }) {
 
           </div>
           <button className='b0'>More Post</button>
+          </div>
+          </section>
+          <section id='about'>
           <div className='contact'>
   <video width="640" height="360" controls autoPlay loop muted>
     <source src=".\WhatsApp Video 2024-01-14 at 3.47.40 PM.mp4" type="video/mp4" />
@@ -160,9 +166,12 @@ export default function Menu({ onAddToCart }) {
     </p>
   </div>
 </div>
+<div>
   <img className="footer"src=".\Footer.png"></img>
 
-      </div>
+    </div>
+    </section>
+      
     </>
   );
 }

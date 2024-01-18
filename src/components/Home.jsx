@@ -5,7 +5,8 @@ import './home.css';
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <section id='home'>
+       <div className="home-container">
       <div className="background-text">
         <h3>Welcome</h3>
         <h1>TRY SOMETHING AMAZING</h1>
@@ -18,5 +19,7 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </section>
+   
   );
 }

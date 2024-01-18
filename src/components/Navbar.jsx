@@ -2,9 +2,10 @@ import React,{useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Import the shopping cart icon
 import './nav.css';
-
+import { Link, animationscroll as scroll} from 'react-scroll';
 import Menu from './Menu.jsx';
 import Home from './Home.jsx';
+
 
 
 
@@ -28,17 +29,20 @@ export default function Navbar() {
         <img src="/nav2.png" alt="image" />
       </li>
       <div className='divs'>
-        <li><a href='#html'>Home </a></li>
-        <li><a href='#html'>Menu </a></li>
-        <li><a href='#html'>Blog</a></li>
-        <li><a href='#html'>About </a></li>
+        <li><Link to='home' smooth={true} duration={500}>Home</Link></li>
+        <li><Link to='menu' smooth={true} duration={500}>Menu</Link></li>
+        <li><Link to='blog' smooth={true} duration={500}>Blog</Link></li>
+        <li><Link to='about' smooth={true} duration={500}>About </Link></li>
         <li><a href='#html'>Contact</a></li>
         <li><button className='b1'>Log in</button></li>
         <li>
+          
           <button className='b2' >
             <i className="fas fa-shopping-cart"></i>
             <FontAwesomeIcon icon={faShoppingCart} />  {cartCount}
           </button>
+          
+          
         </li>
       </div>
     </div>
