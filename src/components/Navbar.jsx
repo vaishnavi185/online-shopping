@@ -5,6 +5,7 @@ import './nav.css';
 import { Link, animationscroll as scroll} from 'react-scroll';
 import Menu from './Menu.jsx';
 import Home from './Home.jsx';
+import { Router } from 'react-router-dom';
 
 
 
@@ -34,7 +35,14 @@ export default function Navbar() {
         <li><Link to='blog' smooth={true} duration={500}>Blog</Link></li>
         <li><Link to='about' smooth={true} duration={500}>About </Link></li>
         <li><a href='#html'>Contact</a></li>
-        <li><button className='b1'>Log in</button></li>
+      
+       
+<li>
+  <Link to="Login" smooth={true} duration={500}>
+    <button className='b1'>Log in</button>
+  </Link>
+</li>
+
         <li>
           
           <button className='b2' >

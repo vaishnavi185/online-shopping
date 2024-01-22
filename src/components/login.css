@@ -1,0 +1,46 @@
+/* Login.css */
+form{
+
+    
+}
+  
+ h1{
+    margin-top: 3px;
+    
+ }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    margin-bottom: 15px;
+  }
+  
+ 
+  input {
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-left: 190px;
+    color: azure;
+  }
+  
+  button {
+    background-color: #dd7c0c;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 50em;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #e7a25d;
+  }
+  

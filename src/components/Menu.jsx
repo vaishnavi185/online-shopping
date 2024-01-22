@@ -1,5 +1,6 @@
 import React ,{useState} from 'react';
 import './menu.css';
+import Login from './Login';
 
 
 
@@ -166,6 +167,7 @@ export default function Menu({ onAddToCart }) {
     </p>
   </div>
 </div>
+<Login></Login>
 <div>
   <img className="footer"src=".\Footer.png"></img>
 
